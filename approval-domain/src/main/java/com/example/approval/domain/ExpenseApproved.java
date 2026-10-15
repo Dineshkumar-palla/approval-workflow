@@ -1,0 +1,3 @@
+package com.example.approval.domain;
+import java.time.Instant; import java.util.UUID;
+public record ExpenseApproved(ExpenseRequestId requestId, java.util.UUID eventId, java.time.Instant occurredAt, UserId approver) implements DomainEvent { public ExpenseApproved { if(requestId==null||eventId==null||occurredAt==null) throw new InvalidRequestDataException("Event identity and timestamp are required"); } }

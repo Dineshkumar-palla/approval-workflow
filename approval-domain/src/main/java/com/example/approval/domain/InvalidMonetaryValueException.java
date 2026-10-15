@@ -1,0 +1,2 @@
+package com.example.approval.domain;
+public class InvalidMonetaryValueException extends DomainException { public InvalidMonetaryValueException(String message){super(message);} public InvalidMonetaryValueException(String message,Throwable cause){super(message,cause);} }

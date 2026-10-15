@@ -1,0 +1,2 @@
+package com.example.approval.domain;
+public class InvalidRequestDataException extends DomainException { public InvalidRequestDataException(String message){super(message);} public InvalidRequestDataException(String message,Throwable cause){super(message,cause);} }

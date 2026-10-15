@@ -1,0 +1,3 @@
+package com.example.approval.adapter;
+import com.example.approval.application.NotificationPort; import com.example.approval.domain.DomainEvent; import java.util.*;
+public final class RecordingNotificationAdapter implements NotificationPort { private final List<DomainEvent> sent=new ArrayList<>(); public synchronized void notify(DomainEvent event){sent.add(Objects.requireNonNull(event));} public synchronized List<DomainEvent> sent(){return List.copyOf(sent);} }

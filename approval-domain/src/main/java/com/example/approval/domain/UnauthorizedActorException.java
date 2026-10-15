@@ -1,0 +1,2 @@
+package com.example.approval.domain;
+public class UnauthorizedActorException extends DomainException { public UnauthorizedActorException(String message){super(message);} public UnauthorizedActorException(String message,Throwable cause){super(message,cause);} }

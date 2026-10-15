@@ -1,0 +1,3 @@
+package com.example.approval.adapter;
+import com.example.approval.application.DomainEventPublisher; import com.example.approval.domain.DomainEvent; import java.util.*;
+public final class RecordingEventPublisher implements DomainEventPublisher { private final List<DomainEvent> published=new ArrayList<>(); public synchronized void publish(DomainEvent event){published.add(Objects.requireNonNull(event));} public synchronized List<DomainEvent> published(){return List.copyOf(published);} }

@@ -1,0 +1,2 @@
+package com.example.approval.domain;
+public class InvalidStateTransitionException extends DomainException { public InvalidStateTransitionException(String message){super(message);} public InvalidStateTransitionException(String message,Throwable cause){super(message,cause);} }
